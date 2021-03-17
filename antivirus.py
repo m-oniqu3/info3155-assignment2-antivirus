@@ -15,12 +15,21 @@ while  n:
     if os.path.isfile(filepath):
         print("This file exists")
         [file, extension] = os.path.splitext(filepath)
-        print (file)
-        print(extension)
+        #print (file)
+        #print(extension)
         
         if (extension == '.py'):
             print("This is a python file")
-            break
+            
+            check = input (" Do you wish to check another file. Write yes or no")
+            if (check=='yes'):
+                continue
+            if (check=="no"):
+                print ("Thank you")
+                break
+            else:
+                print("Your response is invalid")
+                continue
         else:
             print ("This is not a python file")
             continue
