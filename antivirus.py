@@ -1,42 +1,52 @@
 import os
 from pathlib import Path
+import re
+import sys
+#qMeyivyOyh
+#XNjklgrVtg
 
-print("********************************************************")
-print("**                                                    **")
-print("**               Welcome To The Antivirus             **")
-print("**                                                    **")
-print("********************************************************")
 
 print("This program checks whether or not a specific python file is infected.")
 
-n='true'
-while  n:
+run='true'
+while  run:
+    
     filepath = input ("Please enter the file path to the python file you wish to check.")
     if os.path.isfile(filepath):
-        print("This file exists")
         [file, extension] = os.path.splitext(filepath)
-        #print (file)
-        #print(extension)
-        
+              
         if (extension == '.py'):
-            print("This is a python file")
-            
-            check = input (" Do you wish to check another file. Write yes or no")
-            if (check=='yes'):
-                continue
-            if (check=="no"):
-                print ("Thank you")
-                break
+            filecontents=""                       
+            with open(filepath, "r") as pyfiles:
+                for pyfile in pyfiles:
+                    pystrip = pyfile.strip()
+                    filecontents+=pystrip
+                
+            if (re.search('qMeyivyOyh',filecontents)) or (re.search('XNjklgrVtg',filecontents)):
+                print ("This file has been infected")
+
             else:
-                print("Your response is invalid")
+                print("This file has not been infected")
+            
+            check = input ("Do you wish to check another file? Write yes or no")
+            if (check.lower()=='yes'):
                 continue
+
+            if (check.lower()=="no"):
+                sys.exit("This program will now terminate.")
+                #print ("")
+                #break
+                
+            print("Your response is invalid")
+            continue
+
+                
         else:
             print ("This is not a python file")
             continue
-        
-
+    
     else:
-        print("This file does not exist")
+        print("This file does not exist.")
         continue  
 
 
