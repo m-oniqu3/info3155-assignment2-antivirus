@@ -39,7 +39,7 @@ while run:
             else:
                 print("This file has not been infected.")
             
-            #Here, the user if prompt to decide if they wish to check another filepath. If the answer yes, the will be prompted to enter the filepath again. If the answer is no then program will end. If the user enters anything other than no then their response will be deemd as invalid and they will...........
+            #Here, the user is prompted to decide if they wish to check another filepath. If the answer yes, the will be prompted to enter the filepath again. If the answer is no then program will end. If the user enters anything other than no then their response will be deemd as invalid and they will...........
             check = input ("Do you wish to check another file? Write yes or no")
             if (check.lower()=='yes'):
                 continue
