@@ -11,7 +11,7 @@ print("                                                                         
 print("This program checks whether or not a specific python file is infected.")
 print("__________________________________________________________________________")
 print("                                                                          ")
-print("INSTRUCTIONS:\nTO RUN THIS PROGRAM SUCCESSFULLY, PLEASE ENTER THE FILEPATH TO AN EXISTING PYTHON FILE.\nIF YOU WISH CHECK ANOTHER FILE, WHEN PROMPTED PLEASE ENTER YES (yes) OR NO (no).\nANY OTHER RESPONSE WILL BE DEEMED AS INVALID AND THE PROGRAM WILL BE TERMININATED. ")
+print("INSTRUCTIONS:\nTO RUN THIS PROGRAM SUCCESSFULLY, PLEASE ENTER THE FILEPATH TO AN EXISTING PYTHON FILE.\nIF YOU WISH CHECK ANOTHER FILE, WHEN PROMPTED PLEASE ENTER YES (yes) OR NO (no).\nANY OTHER RESPONSE WILL BE DEEMED AS INVALID.")
 print("__________________________________________________________________________")
 print("                                                                          ")
 
