@@ -25,7 +25,7 @@ while run:
     if os.path.isfile(filepath):
         [file, extension] = os.path.splitext(filepath)
 
-        #If the extension is .py, this means its a python file, and the user's filepath was valid. The string filecontents is created. The program then opens the file located at the submitted filepath in a read only format. It then proceeds to loo through the file, and striping it to remove excess space and then adding the stripped data to the filecontents. 
+        #If the extension is .py, this means its a python file, and the user's filepath was valid. The string filecontents is created. The program then opens the file located at the submitted filepath in a read only format. It then proceeds to loop through the file, and striping it to remove excess space and then adding the stripped data to the filecontents. 
         if (extension == '.py'):
             filecontents=""                       
             with open(filepath, "r") as pyfiles:
